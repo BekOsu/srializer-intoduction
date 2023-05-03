@@ -10,7 +10,6 @@ from snippets import views
 urlpatterns = format_suffix_patterns([
 
     path('', views.api_root),
-    path('snippets/<int:pk>/highlight/', views.SnippetHighlight.as_view()),
     path('snippets/',
          views.SnippetList.as_view(),
          name='snippet-list'),
